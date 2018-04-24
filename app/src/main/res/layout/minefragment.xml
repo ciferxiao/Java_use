@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSmoker">
+
+    <FrameLayout
+        android:id="@+id/image"
+        android:src="@drawable/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/image1"
+            android:src="@drawable/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/blank" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"  >
+            <ImageView
+                android:id="@+id/Head_Image"
+                android:layout_width="99dp"
+                android:layout_height="99dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_launcher"
+                android:contentDescription="@string/blank"
+                />
+            <RelativeLayout
+                android:id="@+id/Nick_Name_Rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <EditText
+                    android:id="@+id/Nick_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="未登录"
+                    android:minWidth="20dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:padding="2dp"
+                    />
+                <!--  TextView
+                    android:id="@+id/Nick_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="未登录"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"    /-->
+                <ImageButton
+                    android:id="@+id/Pen"
+                    android:src="@drawable/pen"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/blank"
+                    android:background="#00ffffff"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/Nick_Name"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/Account"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:text="账号          "
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:gravity="center_vertical" />
+    <ImageView
+        android:id="@+id/iv_kind"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Account"
+        android:background="@color/lightGrey"
+        android:contentDescription="@string/blank" />
+    <TextView
+        android:id="@+id/Update_Password"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/iv_kind"
+        android:paddingLeft="10dp"
+        android:background="@color/white"
+        android:text="密码修改"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/right_black"
+        />
+    <ImageView
+        android:id="@+id/iv_kind1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Update_Password"
+        android:background="@color/lightGrey"
+        android:contentDescription="@string/blank" />
+    <TextView
+        android:id="@+id/Hot_phone"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/iv_kind1"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:text="客服热线       "
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:gravity="center_vertical"
+        />
+    <ImageView
+        android:id="@+id/iv_kind2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Hot_phone"
+        android:background="@color/lightGrey"
+        android:contentDescription="@string/blank" />
+    <TextView
+        android:id="@+id/Version"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/iv_kind2"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:text="版本号          "
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:gravity="center_vertical"
+        />
+    <ImageView
+        android:id="@+id/iv_kind3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Version"
+        android:background="@color/lightGrey"
+        android:contentDescription="@string/blank" />
+    <TextView
+        android:id="@+id/Copyright_Notice"
+        android:layout_height="40dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/iv_kind3"
+        android:background="@color/white"
+        android:text="  版权声明"
+        android:textSize="20sp"
+        android:textColor="#313131"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/right_black"
+        />
+    <ImageView
+        android:id="@+id/iv_kind4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Copyright_Notice"
+        android:background="@color/lightGrey"
+        android:contentDescription="@string/blank" />
+
+    <Button
+        android:id="@+id/Log_Out"
+        android:text="退出账号"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_kind4"
+        android:background="@drawable/exit_btn_bg"/>
+
+</RelativeLayout>

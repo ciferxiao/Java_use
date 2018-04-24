@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<android.support.v7.widget.SearchView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"/>
+<com.youth.banner.Banner
+    android:layout_width="match_parent"
+    android:id="@+id/banner"
+    android:layout_height="180dp">
+</com.youth.banner.Banner>
+
+  <RadioGroup
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:id="@+id/radiogroup"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/hotradio"
+            android:layout_weight="1"
+            android:text="@string/hotbutton"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:button="@null"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lastradio"
+            android:text="@string/lastbutton"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"/>
+</LinearLayout>

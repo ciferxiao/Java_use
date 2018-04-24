@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cifer.com.java_use.Activity.MainActivity">
+
+    <include layout = "@layout/toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/main_frame"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/home_frag"
+            style="@style/radiobutton"
+            android:text="@string/hometitle"/>
+        <RadioButton
+            android:id="@+id/course_frag"
+            style="@style/radiobutton"
+            android:text="@string/coursetitle"/>
+        <RadioButton
+            android:id="@+id/note_frag"
+            style="@style/radiobutton"
+            android:text="@string/notetitle"/>
+        <RadioButton
+            android:id="@+id/mine_frag"
+            style="@style/radiobutton"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</LinearLayout>

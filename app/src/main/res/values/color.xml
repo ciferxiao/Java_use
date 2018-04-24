@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>      
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FCCC2C</color>
+    <color name="green">#00ff00</color>
+    
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    
+    <color name="button_blue">#0bbff3</color>
+    
+    <!-- 白， 烟白， 亮灰色， 浅灰色，银白色，深灰色，灰色，暗淡的灰色  -->
+    <color name="white">#ffffff</color>   
+    <color name="whiteSmoker">#F5F5F5</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="gray">#808080</color>
+    <color name="dimGray">#696969</color>
+    <!--亮蓝色  -->
+    <color name="lightblue">#039ac5</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey2">#b2b2b2</color>
+    <color name="grey3">#f3f3f3</color>
+    <color name="grey4">#414141</color>
+</resources>
