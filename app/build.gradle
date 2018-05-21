@@ -49,5 +49,7 @@ dependencies {
     compile 'com.android.support:design:26.1.0'
     //cardview
     compile 'com.android.support:cardview-v7:26.1.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.8.0'
 
 }
