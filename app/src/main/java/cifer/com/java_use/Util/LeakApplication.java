@@ -3,8 +3,7 @@ package cifer.com.java_use.Util;
 import android.app.Application;
 import android.content.Context;
 
-import com.squareup.leakcanary.LeakCanary;
-import com.squareup.leakcanary.RefWatcher;
+
 
 
 /**
@@ -14,7 +13,7 @@ import com.squareup.leakcanary.RefWatcher;
  */
 
 public class LeakApplication extends Application {
-    private RefWatcher refWatcher;
+/*    private RefWatcher refWatcher;
     @Override
     public void onCreate() {
         super.onCreate();
@@ -30,7 +29,7 @@ public class LeakApplication extends Application {
     public static RefWatcher getRefWatcher(Context context) {
         LeakApplication leakApplication = (LeakApplication) context.getApplicationContext();
         return leakApplication.refWatcher;
-    }
+    }*/
 
 
 }

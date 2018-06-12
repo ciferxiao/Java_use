@@ -14,9 +14,10 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnItemClick;
+
 import cifer.com.java_use.R;
 import cifer.com.java_use.bean.Bookbean;
 
@@ -83,10 +84,10 @@ public class WaterFallAdapter extends RecyclerView.Adapter<WaterFallAdapter.View
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
-        @Bind(R.id.imageview)
-        ImageView mImageView;
+        @BindView(R.id.imageview)
+        ImageView mImageView ;
 
-        @Bind(R.id.text_view)
+        @BindView(R.id.text_view)
         TextView mtext;
         ViewHolder(View view){
             //需要设置super

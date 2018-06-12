@@ -32,7 +32,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import cifer.com.java_use.Adapter.GlideImageLoader;
 import cifer.com.java_use.Adapter.WaterFallAdapter;
@@ -46,10 +46,10 @@ import cifer.com.java_use.bean.Url;
  */
 
 public class HomeFragment extends BaseFragment {
-    @Bind(R.id.banner)
+    @BindView(R.id.banner)
     Banner banner;
 
-    @Bind(R.id.listview)
+    @BindView(R.id.listview)
     RecyclerView recyclerView;
 
     private ArrayList<String> images = new ArrayList<>();

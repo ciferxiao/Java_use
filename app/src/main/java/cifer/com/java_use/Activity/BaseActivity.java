@@ -8,8 +8,6 @@ import android.view.KeyEvent;
 /**
 * created at 2018/4/16 10:24
 **/
-
-
 public class BaseActivity  extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
